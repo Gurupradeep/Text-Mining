@@ -1,0 +1,15 @@
+About TM Package :
+https://cran.r-project.org/web/packages/tm/vignettes/tm.pdf 
+
+Bag of Clouds :
+https://georeferenced.wordpress.com/2013/01/15/rwordcloud/
+
+Data-mining book link :
+https://mineriaddatos.wikispaces.com/file/view/Data+Mining+With+Rattle+and+R_+The+Art+of+Excavating+Data+for+Knowledge+Discovery+-+Graham+Williams.pdf
+
+Course link :
+http://togaware.com/onepager/
+
+Steps for any text classification problem :
+http://handsondatascience.com/TextMiningO.pdf
+
