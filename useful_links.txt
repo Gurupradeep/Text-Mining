@@ -1,3 +1,6 @@
+Basics of Text Mining :
+https://www.datacamp.com/courses/intro-to-text-mining-bag-of-words
+
 About TM Package :
 https://cran.r-project.org/web/packages/tm/vignettes/tm.pdf
 
