@@ -13,3 +13,9 @@ http://togaware.com/onepager/
 Steps for any text classification problem :
 http://handsondatascience.com/TextMiningO.pdf
 https://rstudio-pubs-static.s3.amazonaws.com/31867_8236987cf0a8444e962ccd2aec46d9c3.html
+
+Link for predictive text: 
+https://rpubs.com/brianzive/textmining
+
+Sentiment Analysis :
+https://www.codementor.io/python/tutorial/data-science-python-r-sentiment-classification-machine-learning
