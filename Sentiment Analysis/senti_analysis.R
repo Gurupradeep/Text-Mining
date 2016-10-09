@@ -3,8 +3,9 @@ library(tm)
 library(qdap)
 library(RCurl)
 library(ROCR)
-library(wordcloud) 
-#Import RCurl for loading data via URL
+library(wordcloud)
+library(SnowballC)
+library(caTools)
 
 test_data_url <- "https://dl.dropboxusercontent.com/u/8082731/datasets/UMICH-SI650/testdata.txt"
 train_data_url <- "https://dl.dropboxusercontent.com/u/8082731/datasets/UMICH-SI650/training.txt"
@@ -44,7 +45,7 @@ clean_corpus <- function(corpus){
   return(corpus)
 }
 
-clean_corpus(corpus)
+corpus<-clean_corpus(corpus)
 
 #Create a DTM
 #Normalisation is not really neccessary here 
@@ -110,7 +111,7 @@ head(subset(cutoffs, fpr < 0.1))
 
 #Predict on original test data set
 log_pred_test <- predict(log_model, newdata=test_data_words_df, type="response")
-test_data_df$Sentiment <- log_pred_test>.5
+test_data_df$Sentiment <- log_pred_test>0.2119
 
 #print a part of predicted data to see output 
 set.seed(1234)
