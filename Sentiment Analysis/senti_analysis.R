@@ -89,6 +89,22 @@ log_pred <- predict(log_model, newdata=eval_test_data_df, type="response")
 table(eval_test_data_df$Sentiment, log_pred>.5)
 
 
+#Use ROC to get threshold 
+library(ROCR)
+head(log_pred)
+
+#$Predictions has continous values between O and 1 which are predicted by our model and $labels are the actual output values which should be binary.
+pred <- prediction(log_pred, eval_test_data_df$Sentiment)
+perf <- performance(pred,"tpr","fpr")
+plot(perf)
+str(perf)
+cutoffs <- data.frame(cut=perf@alpha.values[[1]], fpr=perf@x.values[[1]], 
+                      tpr=perf@y.values[[1]])
+head(cutoffs)
+cutoffs <- cutoffs[order(cutoffs$tpr, decreasing=TRUE),]
+head(subset(cutoffs, fpr < 0.1))
+
+
 #Predict on original test data set
 log_pred_test <- predict(log_model, newdata=test_data_words_df, type="response")
 test_data_df$Sentiment <- log_pred_test>.5
@@ -99,3 +115,10 @@ spl_test <- sample.split(test_data_df$Sentiment, .0005)
 test_data_sample_df <- test_data_df[spl_test==T,]
 test_data_sample_df[test_data_sample_df$Sentiment==T, c('Text')]
 test_data_sample_df[test_data_sample_df$Sentiment==F, c('Text')]
+
+#Wordcloud
+
+library(wordcloud) 
+set.seed(142)
+freq <- sort(colSums(as.matrix(sparse)), decreasing=TRUE)
+wordcloud(names(freq), freq, min.freq=25)  
