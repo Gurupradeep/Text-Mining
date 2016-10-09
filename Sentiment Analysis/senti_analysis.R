@@ -1,5 +1,11 @@
-#Import RCurl for loading data via URL
+#loading the required libraries
+library(tm)
+library(qdap)
 library(RCurl)
+library(ROCR)
+library(wordcloud) 
+#Import RCurl for loading data via URL
+
 test_data_url <- "https://dl.dropboxusercontent.com/u/8082731/datasets/UMICH-SI650/testdata.txt"
 train_data_url <- "https://dl.dropboxusercontent.com/u/8082731/datasets/UMICH-SI650/training.txt"
 
@@ -20,9 +26,6 @@ table(train_data_df$Sentiment)
 
 #returns the average no. of words in a sentence
 mean(sapply(sapply(train_data_df$Text, strsplit, " "), length))
-
-library(tm)
-library(qdap)
 
 #Creates a VCorpus object 
 corpus <- Corpus(VectorSource(c(train_data_df$Text, test_data_df$Text)))
@@ -68,7 +71,6 @@ test_data_words_df <- cbind(test_data_df, important_words_test_df)
 train_data_words_df$Text <- NULL
 test_data_words_df$Text <- NULL
 
-library(caTools)
 set.seed(1234)
 
 #Cross-Validation to check performance of our model
@@ -91,7 +93,7 @@ table(eval_test_data_df$Sentiment, log_pred>.5)
 
 
 #Use ROC to get threshold 
-library(ROCR)
+
 head(log_pred)
 
 #$Predictions has continous values between O and 1 which are predicted by our model and $labels are the actual output values which should be binary.
@@ -118,8 +120,6 @@ test_data_sample_df[test_data_sample_df$Sentiment==T, c('Text')]
 test_data_sample_df[test_data_sample_df$Sentiment==F, c('Text')]
 
 #Wordcloud
-
-library(wordcloud) 
 set.seed(142)
 freq <- sort(colSums(as.matrix(sparse)), decreasing=TRUE)
 wordcloud(names(freq), freq, min.freq=25)  
