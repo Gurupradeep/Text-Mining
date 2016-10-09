@@ -44,7 +44,8 @@ clean_corpus <- function(corpus){
 clean_corpus(corpus)
 
 #Create a DTM
-dtm <- DocumentTermMatrix(corpus)
+#Normalisation is not really neccessary here 
+dtm <- DocumentTermMatrix(corpus,control = list(weighting = weightTf, normalize = TRUE))
 print(dtm)
 
 #Remove terms appearing in less than 1% of the documents
