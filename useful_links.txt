@@ -22,3 +22,10 @@ https://rpubs.com/brianzive/textmining
 
 Sentiment Analysis :
 https://www.codementor.io/python/tutorial/data-science-python-r-sentiment-classification-machine-learning
+
+More than Bag of Words:
+http://www.aclweb.org/anthology/R13-1072
+https://www.scss.tcd.ie/Khurshid.Ahmad/Research/Sentiments/K_Teams_Buchraest/mvie%20review%20review.pdf
+http://scialert.net/fulltext/?doi=tasr.2011.1141.1157&org=10
+http://onlinepresent.org/proceedings/vol81_2015/23.pdf
+http://web.engr.illinois.edu/~bhatti2/Sentiment-Analysis.pdf
