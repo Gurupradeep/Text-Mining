@@ -1,0 +1,26 @@
+> table(sentiments$polarity)
+
+negative  neutral positive 
+      47     2892       61
+	  
+first method
+
+>results1	
+[1] 1.297872    1.297872 2892.000000	  
+
+
+>table(analysis$score)
+
+  -4   -3   -2   -1    0    1    2    3 
+  10   43  102  585 1833  336   76   15
+  
+  
+second method
+> results2
+[1]    0.5563674    0.5770270 1833.0000000
+
+
+			  
+			  
+	  
+	 
