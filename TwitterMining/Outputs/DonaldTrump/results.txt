@@ -1,14 +1,18 @@
+#FIRST METHOD
+
 negative  neutral positive 
      137     2848       15 
 
 
+#Second Method sentiment scores
   -5   -4   -3   -2   -1    0    1    2    3 
    5    6   80  267  736 1275  543   75   13 
 
 
+#second method p/n ratio
 prediction
 [1]    0.4695318    0.5767824 1275.0000000
 
-
+#first method p/n ratio
 > prediction
 [1]    0.1094891    0.1094891 2848.0000000
