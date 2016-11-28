@@ -1,6 +1,6 @@
 This file describes the implementation details of the classification of Wikipedia articles.
 
-#Input
+# Input
 The following 25 wikipedia articles were used for classification :
 "Mahendra Singh Dhoni",
 "Sachin Tendulkar",
