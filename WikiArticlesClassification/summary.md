@@ -48,8 +48,8 @@ Two methods were used for Classification:
    
 2. Topic Modelling using LDA 
    
-   Topic Modelling technique named LDA (Latent Dirichlet Allocation) has been used for classification
-   Gibbs Sampling technique has been used. 
+   Topic Modelling technique named LDA (Latent Dirichlet Allocation) has been used for classification.
+   Gibbs Sampling technique has been used for obtaining the LDA distributions. 
    The results of this analysis have been made available in Outputs/*.csv
    
 Both the techniques have given optimal results for the provided input.
