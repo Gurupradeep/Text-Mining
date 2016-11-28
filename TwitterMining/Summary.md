@@ -60,6 +60,14 @@ The results of the analysis are briefly summarised below :
 
 ##ANALYSIS SCORES
 ####HILLLARY CLINTON
+#######Method 1 :
+negative  neutral positive 
+      47     2892       61
+
+######Method 2 :
+
+-4   -3   -2   -1    0    1    2    3 
+  10   43  102  585 1833  336   76   15
 
 output.csv in each of these directories contains the scores of each of the 3000 tweets.  
 results.txt in each of these directories contains the outputs returned by the calculateRatio function, for both the methods described. 
