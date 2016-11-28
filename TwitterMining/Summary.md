@@ -9,8 +9,8 @@ performing the sentiment analysis.
 # Tweets collection
 The twitter hashtags "#DonaldTrump" and "#HillaryClinton" have been used.
 
-R/DonaldTrump.R    - contains analysis of tweets belonging to "#DonaldTrump"
-R/hillaryClinton.R - contains analysis of tweets belonging to "#HillaryClinton"
+R/DonaldTrump.R    - contains analysis of tweets belonging to "#DonaldTrump" __
+R/hillaryClinton.R - contains analysis of tweets belonging to "#HillaryClinton" __
 
 #Description 
 
@@ -56,7 +56,7 @@ K Means clustering and hierarchical clustering has also been performed on the cl
 Outputs/DonaldTrump - contains the results of sentiment analysis of tweets belonging to "#DonaldTrump"
 Outputs/HillaryClinton - contains the results of sentiment analysis of tweets belonging to "#HillaryClinton"
 
-output.csv in each of these directories contains the scores of each of the 3000 tweets. 
+output.csv in each of these directories contains the scores of each of the 3000 tweets. __
 results.txt in each of these directories contains the outputs returned by the calculateRatio function, for both the methods described. 
 
 images/DonaldTrump and images/HillaryClinton contain the images of the cluster dendrogram, wordclouds and histograms for the
