@@ -56,6 +56,11 @@ K Means clustering and hierarchical clustering has also been performed on the cl
 Outputs/DonaldTrump - contains the results of sentiment analysis of tweets belonging to "#DonaldTrump"
 Outputs/HillaryClinton - contains the results of sentiment analysis of tweets belonging to "#HillaryClinton"
 
+The results of the analysis are briefly summarised below :
+
+##ANALYSIS SCORES
+####HILLLARY CLINTON
+
 output.csv in each of these directories contains the scores of each of the 3000 tweets.  
 results.txt in each of these directories contains the outputs returned by the calculateRatio function, for both the methods described. 
 
