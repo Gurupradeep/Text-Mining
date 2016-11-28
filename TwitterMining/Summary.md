@@ -60,7 +60,7 @@ The results of the analysis are briefly summarised below :
 
 ##ANALYSIS SCORES
 ####HILLARY CLINTON
-#######Method 1 :
+######Method 1 :
 | Neutral       | Positive      | Negative|
 | ------------- |:-------------:| -----:|
 |    2892       |        61     |  47   |
@@ -69,6 +69,19 @@ The results of the analysis are briefly summarised below :
 | -4    | -3     | -2| -1 | 0 | 1 | 2 | 3 | 
 | ------------- |:-------------:| -----:| -----:| -----:| -----:| -----:| -----:|
 |    10    |       43     |  102   | 585 | 1833 | 336 | 76 | 15 |
+
+
+####DONALD TRUMP
+######Method 1 :
+| Neutral       | Positive      | Negative|
+| ------------- |:-------------:| -----:|
+|    2848   |        15     |  137  |
+
+######Method 2 :
+|-5| -4    | -3     | -2| -1 | 0 | 1 | 2 | 3 | 
+|-------------| ------------- |:-------------:| -----:| -----:| -----:| -----:| -----:| -----:|
+|5|    6    |       80     |  267   | 736 | 1275 | 543 | 75 | 13 |
+
 
 output.csv in each of these directories contains the scores of each of the 3000 tweets.  
 results.txt in each of these directories contains the outputs returned by the calculateRatio function, for both the methods described. 
