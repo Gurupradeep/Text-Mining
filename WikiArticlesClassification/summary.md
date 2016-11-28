@@ -35,8 +35,8 @@ The following 25 wikipedia articles were used for classification :
 
 #Description
 
-The above articles were loaded, preprocessed by creating a corpus, cleaning the corpus and performing stemDocumentation and 
-stemCompletion according to the standard text preprocessing techniques.
+The above articles were loaded and preprocessed. Corpus creation, corpus cleaning, stemDocumentation and 
+stemCompletion were carried out according to the standard text preprocessing techniques.
 Necessary stopwords were removed, and certain words were replaced.
 
 Two methods were used for Classification: 
