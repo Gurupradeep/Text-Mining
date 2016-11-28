@@ -61,8 +61,9 @@ The results of the analysis are briefly summarised below :
 ##ANALYSIS SCORES
 ####HILLLARY CLINTON
 #######Method 1 :
-negative  neutral positive 
-      47     2892       61
+| Neutral       | Positive      | Negative|
+| ------------- |:-------------:| -----:|
+|    2892       |        61     |  47   |
 
 ######Method 2 :
 
