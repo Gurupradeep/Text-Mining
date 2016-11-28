@@ -98,19 +98,6 @@ The results of the analysis are briefly summarised below :
 |      0.4695318  |          0.5767824 | 
 
 
-####DONALD TRUMP
-######Method 1 :
-| Neutral       | Positive      | Negative|
-| ------------- |:-------------:| -----:|
-|    2848   |        15     |  137  |
-
-######Method 2 :
-|-5| -4    | -3     | -2| -1 | 0 | 1 | 2 | 3 | 
-|-------------| ------------- |:-------------:| -----:| -----:| -----:| -----:| -----:| -----:|
-|5|    6    |       80     |  267   | 736 | 1275 | 543 | 75 | 13 |
-
-
-## P/N ratios
 
 ####HILLARY CLINTON
 ######Method 1 :
