@@ -42,12 +42,13 @@ Necessary stopwords were removed, and certain words were replaced.
 Two methods were used for Classification: 
 
 1. K-Means and Hierarchical Clustering 
-2. Topic Modelling using LDA 
 
-1. K-Means and hierarchical clustering have been carried out and results have been documented in : 
+   K-Means and hierarchical clustering have been carried out and results have been documented in : 
    Images/dendrogram.png and Outputs/results.csv
    
-2. Topic Modelling technique named LDA (Latent Dirichlet Allocation) has been used for classification
+2. Topic Modelling using LDA 
+   
+   Topic Modelling technique named LDA (Latent Dirichlet Allocation) has been used for classification
    Gibbs Sampling technique has been used. 
    The results of this analysis have been made available in Outputs/*.csv
    
