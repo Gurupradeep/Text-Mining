@@ -43,7 +43,7 @@ It calculates two types of ratios - one based on magnitude of the scores, and
                                     one based on the sign of the scores ignoring the magnitude 
                                     ( for example, a score of 2 or a score of 1 is counted as 1)
 
-ratio.mag<-abs(positive.sum/negative.sum)  
+ratio.mag<-abs(positive.sum/negative.sum)
 ratio<-abs(positive.count/negative.count)
 
 These two values along with the count of neutral words are returned back to the calling functions.
@@ -60,15 +60,15 @@ The results of the analysis are briefly summarised below :
 
 ##ANALYSIS SCORES
 ####HILLARY CLINTON
-######Method 1 :
+#######Method 1 :
 | Neutral       | Positive      | Negative|
 | ------------- |:-------------:| -----:|
 |    2892       |        61     |  47   |
 
 ######Method 2 :
-
--4   -3   -2   -1    0    1    2    3 
-  10   43  102  585 1833  336   76   15
+| -4    | -3     | -2| -1 | 0 | 1 | 2 | 3 | 
+| ------------- |:-------------:| -----:| -----:| -----:| -----:| -----:| -----:|
+|    10    |       43     |  102   | 585 | 1833 | 336 | 76 | 15 |
 
 output.csv in each of these directories contains the scores of each of the 3000 tweets.  
 results.txt in each of these directories contains the outputs returned by the calculateRatio function, for both the methods described. 
