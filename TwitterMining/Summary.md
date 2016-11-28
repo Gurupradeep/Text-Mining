@@ -43,7 +43,7 @@ It calculates two types of ratios - one based on magnitude of the scores, and
                                     one based on the sign of the scores ignoring the magnitude 
                                     ( for example, a score of 2 or a score of 1 is counted as 1)
 
-ratio.mag<-abs(positive.sum/negative.sum)
+ratio.mag<-abs(positive.sum/negative.sum)  
 ratio<-abs(positive.count/negative.count)
 
 These two values along with the count of neutral words are returned back to the calling functions.
