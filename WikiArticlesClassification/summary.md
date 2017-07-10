@@ -53,3 +53,5 @@ Two methods were used for Classification:
    The results of this analysis have been made available in Outputs/*.csv
    
 Both the techniques have given optimal results for the provided input.
+
+Grouping the topics based on Jensen-Shannon Distance
